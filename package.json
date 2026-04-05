@@ -1,0 +1,25 @@
+{
+	"name": "grief-stricken-winds",
+	"description": "A starter for Astro with i18n support",
+	"version": "3.0.1",
+	"license": "MIT",
+	"homepage": "https://astro-i18n-starter.pages.dev/",
+	"engines": {
+		"node": ">=20"
+	},
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev --open",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/check": "^0.9.5",
+		"@astrojs/mdx": "^4.3.11",
+		"@astrojs/rss": "^4.0.13",
+		"@astrojs/sitemap": "^3.6.0",
+		"astro": "^5.15.9",
+		"typescript": "^5.9.3"
+	}
+}
