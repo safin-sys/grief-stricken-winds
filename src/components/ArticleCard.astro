@@ -1,0 +1,61 @@
+---
+interface Props {
+  title: string;
+  subtitle?: string;
+  src: string;
+  alt?: string;
+}
+const { title, subtitle, src, alt = "article-cover" } = Astro.props;
+---
+
+<div class="article-card">
+  <div class="content">
+    <p class="title">{title}</p>
+    {subtitle && <p class="subtitle">{subtitle}</p>}
+  </div>
+  <img src={src} alt={alt} />
+</div>
+
+<style>
+  .article-card {
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow:
+      0 1px 3px #0000001f,
+      0 1px 2px #0000003d;
+  }
+
+  .article-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .article-card .content {
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    padding: 30px 20px 20px;
+    height: auto;
+    bottom: 0;
+    background: linear-gradient(transparent, #0009);
+  }
+
+  .article-card .date,
+  .article-card .title {
+    margin: 0;
+  }
+
+  .article-card .subtitle {
+    color: #ffffffe6;
+    margin-bottom: 4px;
+  }
+
+  .article-card .title {
+    font-size: 17px;
+    color: #fff;
+  }
+</style>

@@ -1,7 +1,6 @@
 ---
 // Header & Navigation UI displayed on each page.
 
-import LocaleSelect from "@/components/i18n/LocaleSelect.astro";
 import { useTranslations, type Lang } from "@/i18n";
 import { getRelativeLocaleUrl } from "astro:i18n";
 const t = useTranslations(Astro.currentLocale as Lang);
@@ -66,7 +65,6 @@ const links = [
     </a>
   </h1>
 
-  <LocaleSelect />
   <nav class="l-content">
     <ul>
       {links.map(link => (

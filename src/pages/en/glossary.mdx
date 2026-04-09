@@ -3,8 +3,9 @@ title: Glossary of People and Terms (Work in Progress)
 layout: "@/layouts/Article.astro"
 description: "This article explains other features available in the Astro i18n Theme."
 ---
+
+import ArticleCard from "@/components/ArticleCard.astro";
 import PageHeadline from "@/components/PageHeadline.astro";
-import { SITE_TITLE } from "@/consts";
 
 <PageHeadline title={frontmatter.title} />
 
@@ -14,11 +15,11 @@ import { SITE_TITLE } from "@/consts";
 
 ### Don Stephen (D.S.) Senanayake
 
-Don Stephen Senanayake
-
-1st Prime Minister of Ceylon (1947-1952)
-
-![article-cover](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Official_Photographic_Portrait_of_Don_Stephen_Senanayaka_%281884-1952%29.jpg/2560px-Official_Photographic_Portrait_of_Don_Stephen_Senanayaka_%281884-1952%29.jpg)
+<ArticleCard 
+  title="Don Stephen Senanayake"
+  subtitle="1st Prime Minister of Ceylon (1947-1952)"
+  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Official_Photographic_Portrait_of_Don_Stephen_Senanayaka_%281884-1952%29.jpg/2560px-Official_Photographic_Portrait_of_Don_Stephen_Senanayaka_%281884-1952%29.jpg"
+/>
 
 The first prime minister of Ceylon/Lanka. He oversaw the Soulbury Commission and the adoption of the Soulbury Constitution thus transitioning Ceylon from a crown colony into a Commonwealth
 Realm under the British Empire. Lanka would not gain full independence from the British until the 70s under Sirimavo Bandaranaike's premiership.
@@ -28,21 +29,21 @@ in the Eastern province of the island. Due to the massive influx of Sinhalese se
 
 ### Richard Gotabhaya (R.G.) Senanayake
 
-Richard Gotabhaya Senanayake
-
-Minister of Trade and Commerce (1952-1960)
-
-![article-cover](https://upload.wikimedia.org/wikipedia/en/f/fa/R.G._Senanayake.jpg)
+<ArticleCard 
+  title="Richard Gotabhaya Senanayake"
+  subtitle="Minister of Trade and Commerce (1952-1960)"
+  src="https://upload.wikimedia.org/wikipedia/en/f/fa/R.G._Senanayake.jpg"
+/>
 
 D.S. Senanayake's nephew. The only real confidante of D.S. Senanayake; he was extensively aware of D.S. Senanayake's plans to colonize and occupy the Tamil majority areas of the island, a.k.a. Eelam.
 
 ### Solomon West Ridgeway Dias (S.W.R.D.) Bandaranaike
 
-Solomon West Ridgeway Dias Bandaranaike
-
-Prime Minister of Ceylon (1956-1959)
-
-![article-cover](https://i0.wp.com/www.colombotelegraph.com/wp-content/uploads/2012/02/swrd-colombotelegraph.jpg?resize=900%2C735&ssl=1)
+<ArticleCard 
+  title="Solomon West Ridgeway Dias Bandaranaike"
+  subtitle="Prime Minister of Ceylon (1956-1959)"
+  src="https://i0.wp.com/www.colombotelegraph.com/wp-content/uploads/2012/02/swrd-colombotelegraph.jpg?resize=900%2C735&ssl=1"
+/>
 
 The fourth prime minister of Ceylon and the first prime minister to represent the Sri Lanka Freedom Party (SLFP).
 
@@ -52,151 +53,157 @@ for the construction of the Gal Oya dam. The 1956 anti-Tamil pogroms roughly cla
 
 ### Sirimavo Bandaranaike
 
-Sirimavo Bandaranaike
-
-Prime Minister of Sri Lanka (1960-1965, 1970-1977, 1994-2000)
-
-![article-cover](https://cdn.britannica.com/45/239145-004-B9FDECB1.jpg)
+<ArticleCard 
+  title="Sirimavo Bandaranaike"
+  subtitle="Prime Minister of Sri Lanka (1960-1965, 1970-1977, 1994-2000)"
+  src="https://cdn.britannica.com/45/239145-004-B9FDECB1.jpg"
+/>
 
 S.W.R.D's wife and the world's first woman prime minister. Started the Mahaweli colonization program, banned the import of Tamil newspapers and other Tamil language media from Tamil Nadu in India,
 required Sinhala to be used in legal proceedings thus barring due process to Tamils, and other apartheid like policies against Tamils. Was also responsible for the attack on the World Tamil Conference in Jaffna in 1974, killing 11 Tamils.
 
 ### Junius Richard (J.R.) Jayewardene
 
-Junius Richard Jayewardene
-
-Prime Minister (1977-1978), President of Sri Lanka (1978-1989)
-
-![article-cover](https://upload.wikimedia.org/wikipedia/commons/5/5d/J._R._Jayawardene%2C_President_of_the_Democratic_Socialist_Republic_of_Sri_Lanka_on_June_20%2C_1984.jpg)
+<ArticleCard 
+  title="Junius Richard Jayewardene"
+  subtitle="Prime Minister (1977-1978), President of Sri Lanka (1978-1989)"
+  src="https://upload.wikimedia.org/wikipedia/commons/5/5d/J._R._Jayawardene%2C_President_of_the_Democratic_Socialist_Republic_of_Sri_Lanka_on_June_20%2C_1984.jpg"
+/>
 
 D.S. Senanayake's distant relative. Accelerated Sirimavo's Mahaweli colonization program and was ultimately responsible for the burning of the Jaffna Public Library in 1981, the Black July pogroms
 in July 1983, and oversaw the beginning phases of the war.
 
 ### Lalith Athulathmudali
 
-Lalith Athulathmudali
-
-Minister of Defence (1984-1989)
-
-![article-cover](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQi1W8rAOS5N8ssCw2_pwWfhULj_7toYbL-p_L2QR5OCXyuhn2VGL5AsbwL56bh8ZWkUeXDT3wFmb0RzVC-KrEPyw)
+<ArticleCard 
+  title="Lalith Athulathmudali"
+  subtitle="Minister of Defence (1984-1989)"
+  src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQi1W8rAOS5N8ssCw2_pwWfhULj_7toYbL-p_L2QR5OCXyuhn2VGL5AsbwL56bh8ZWkUeXDT3wFmb0RzVC-KrEPyw"
+/>
 
 ### Gamini Dissanayake
 
-Gamini Dissanayake
-
-Minister of Mahaweli Development (1977-1990)
-
-![article-cover](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Gamini_Dissanayake.jpg/500px-Gamini_Dissanayake.jpg)
+<ArticleCard 
+  title="Gamini Dissanayake"
+  subtitle="Minister of Mahaweli Development (1977-1990)"
+  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Gamini_Dissanayake.jpg/500px-Gamini_Dissanayake.jpg"
+/>
 
 ### Ranil Wickremesinghe
 
-Ranil Wickremesinghe
-
-Prime Minister of Sri Lanka (1993-1994, 2001-2004, 2015-2018, 2018-2019, 2022), President of Sri Lanka (2022-2024)
-
-![article-cover](https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Defense.gov_News_Photo_031103-D-2987S-069.jpg/500px-Defense.gov_News_Photo_031103-D-2987S-069.jpg)
+<ArticleCard 
+  title="Ranil Wickremesinghe"
+  subtitle="Prime Minister of Sri Lanka (1993-1994, 2001-2004, 2015-2018, 2018-2019, 2022), President of Sri Lanka (2022-2024)"
+  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Defense.gov_News_Photo_031103-D-2987S-069.jpg/500px-Defense.gov_News_Photo_031103-D-2987S-069.jpg"
+/>
 
 ### Ranasinghe Premadasa
 
-Ranasinghe Premadasa
-
-Prime Minister of Sri Lanka (1978-1989), President of Sri Lanka (1989-1993)
-
-![article-cover](https://upload.wikimedia.org/wikipedia/commons/1/12/Ranasinghe_Premadasa.jpeg)
+<ArticleCard 
+  title="Ranasinghe Premadasa"
+  subtitle="Prime Minister of Sri Lanka (1978-1989), President of Sri Lanka (1989-1993)"
+  src="https://upload.wikimedia.org/wikipedia/commons/1/12/Ranasinghe_Premadasa.jpeg"
+/>
 
 ### Chandrika Bandaranaike Kumaratunga
 
-Chandrika Bandaranaike Kumaratunga
-
-Prime Minister of Sri Lanka (1994), President of Sri Lanka (1994-2005)
-
-![article-cover](https://upload.wikimedia.org/wikipedia/commons/2/27/Chandrika_Kumaratunga_with_PM_Modi_%28cropped%29.jpg)
+<ArticleCard 
+  title="Chandrika Bandaranaike Kumaratunga"
+  subtitle="Prime Minister of Sri Lanka (1994), President of Sri Lanka (1994-2005)"
+  src="https://upload.wikimedia.org/wikipedia/commons/2/27/Chandrika_Kumaratunga_with_PM_Modi_%28cropped%29.jpg"
+/>
 
 ### Lakshman Kadirgamar
 
-Lakshman Kadirgamar
-
-Minister of Foreign Affairs of Sri Lanka (1994-2001, 2004-2005)
-
-![article-cover](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/The_Minister_for_Foreign_Affairs%2C_Sri_Lanka%2C_Mr._Lakshman_Kadirgamar_meeting_with_Union_Minister_of_Commerce_and_Industry%2C_Shri_Kamal_Nath_in_New_Delhi_on_December_7%2C_2004_%28cropped%29.jpg/500px-thumbnail.jpg)
+<ArticleCard 
+  title="Lakshman Kadirgamar"
+  subtitle="Minister of Foreign Affairs of Sri Lanka (1994-2001, 2004-2005)"
+  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/The_Minister_for_Foreign_Affairs%2C_Sri_Lanka%2C_Mr._Lakshman_Kadirgamar_meeting_with_the_Union_Minister_of_Commerce_and_Industry%2C_Shri_Kamal_Nath_in_New_Delhi_on_December_7%2C_2004_%28cropped%29.jpg/500px-thumbnail.jpg"
+/>
 
 ### Ratnasiri Wickremenayake
 
-Ratnasiri Wickremenayake
-
-Prime Minister of Sri Lanka (2000-2001, 2005-2010)
-
-![article-cover](https://upload.wikimedia.org/wikipedia/commons/d/dd/Ratnasiri_Wickremanayake1.jpg)
+<ArticleCard 
+  title="Ratnasiri Wickremenayake"
+  subtitle="Prime Minister of Sri Lanka (2000-2001, 2005-2010)"
+  src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Ratnasiri_Wickremanayake1.jpg"
+/>
 
 ### Mahinda Rajapaksa
 
-Percy Mahendra Rajapaksa
-
-President of Sri Lanka (2005-2015), Prime Minister of Sri Lanka (2004-2005, 2019-2022)
-
-![article-cover](https://upload.wikimedia.org/wikipedia/commons/3/30/The_former_President_of_Sri_Lanka%2C_Mr._Mahinda_Rajapaksa_meeting_the_Prime_Minister%2C_Shri_Narendra_Modi%2C_in_New_Delhi_on_September_12%2C_2018_%281%29_%28cropped%29.JPG)
+<ArticleCard 
+  title="Percy Mahendra Rajapaksa"
+  subtitle="President of Sri Lanka (2005-2015), Prime Minister of Sri Lanka (2004-2005, 2019-2022)"
+  src="https://upload.wikimedia.org/wikipedia/commons/3/30/The_former_President_of_Sri_Lanka%2C_Mr._Mahinda_Rajapaksa_meeting_the_Prime_Minister%2C_Shri_Narendra_Modi%2C_in_New_Delhi_on_September_12%2C_2018_%281%29_%28cropped%29.JPG"
+/>
 
 ### Gotabaya Rajapaksa
 
-Nandasena Gotabaya Rajapaksa
-
-Secretary to the Ministry of Defence and Urban Development (2005-2015), President of Sri Lanka (2019-2022)
-
-![article-cover](https://upload.wikimedia.org/wikipedia/commons/5/50/Gotabaya_Rajapaksa_November_2019_crop.jpg)
+<ArticleCard 
+  title="Nandasena Gotabaya Rajapaksa"
+  subtitle="Secretary to the Ministry of Defence and Urban Development (2005-2015), President of Sri Lanka (2019-2022)"
+  src="https://upload.wikimedia.org/wikipedia/commons/5/50/Gotabaya_Rajapaksa_November_2019_crop.jpg"
+/>
 
 ### Shavendra Silva
 
-General Shavendra Silva
-
-Chief of Defence Staff, Commander of the Army, Chief of Staff of the Army, Adjutant General, 58 Division
-
-![article-cover](https://alt.army.lk/gajabaregiment/sites/default/files/01_chief_of_staff_1.jpg)
+<ArticleCard 
+  title="General Shavendra Silva"
+  subtitle="Chief of Defence Staff, Commander of the Army, Chief of Staff of the Army, Adjutant General, 58 Division"
+  src="https://alt.army.lk/gajabaregiment/sites/default/files/01_chief_of_staff_1.jpg"
+/>
 
 ### Sarath Fonseka
 
-Field Marshal Sarath Fonseka
-
-Chief of Defence Staff, Commander of the Army, Chief of Staff of the Army, Adjutant General, 58 Division
-
-![article-cover](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Fonseka_Press_Conference.jpg/500px-Fonseka_Press_Conference.jpg)
+<ArticleCard 
+  title="Field Marshal Sarath Fonseka"
+  subtitle="Chief of Defence Staff, Commander of the Army, Chief of Staff of the Army, Adjutant General, 58 Division"
+  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Fonseka_Press_Conference.jpg/500px-Fonseka_Press_Conference.jpg"
+/>
 
 ### Sarath Weerasekera
 
-Rear Admiral Sarath Weerasekera
-
-![article-cover](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh33Iy5E6UohC5X4Am4zNADWRwNhARdvFzPE7Ex9qtxWgNrkuJnBWIzloVf2my7qhQpJO57rzgrNqXdvTgoFtUvg)
+<ArticleCard 
+  title="Rear Admiral Sarath Weerasekera"
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh33Iy5E6UohC5X4Am4zNADWRwNhARdvFzPE7Ex9qtxWgNrkuJnBWIzloVf2my7qhQpJO57rzgrNqXdvTgoFtUvg"
+/>
 
 ### Jagath Dias
 
-Major General Jagath Dias
-
-![article-cover](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvmSgmms6IEMnUZH-Cq4h7D4JCDGiif8pEcg&s)
+<ArticleCard 
+  title="Major General Jagath Dias"
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvmSgmms6IEMnUZH-Cq4h7D4JCDGiif8pEcg&s"
+/>
 
 ### Jagath Jayasuriya
 
-General Jagath Jayasuriya
-
-![article-cover](https://upload.wikimedia.org/wikipedia/commons/e/e6/Jagath_Jayasuriya.jpg)
+<ArticleCard 
+  title="General Jagath Jayasuriya"
+  src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Jagath_Jayasuriya.jpg"
+/>
 
 ### Kamal Gunaratne
 
-General Kamal Gunaratne
-
-![article-cover](https://www.tamilguardian.com/sites/default/files/images/icons/sod_major_general_gdhk_gunaratne.jpg)
+<ArticleCard 
+  title="General Kamal Gunaratne"
+  src="https://www.tamilguardian.com/sites/default/files/images/icons/sod_major_general_gdhk_gunaratne.jpg"
+/>
 
 ### Wasantha Karannagoda
 
-Admiral of the Fleet Wasantha Karannagoda
-
-![article-cover](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Admiral_of_the_Fleet_Wasantha_Karannagoda.jpg/500px-Admiral_of_the_Fleet_Wasantha_Karannagoda.jpg)
+<ArticleCard 
+  title="Admiral of the Fleet Wasantha Karannagoda"
+  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Admiral_of_the_Fleet_Wasantha_Karannagoda.jpg/500px-Admiral_of_the_Fleet_Wasantha_Karannagoda.jpg"
+/>
 
 ## Tamil nationalist figures
 
 ### Samuel Joseph Velupillai (S.J.V.) Chelvanayakam
 
-Samuel Joseph Velupillai Chelvanayakam
-
-![article-cover](https://bmkltsly13vb.compat.objectstorage.ap-mumbai-1.oraclecloud.com/cdn.ft.lk/assets/uploads/image_afb0d5380f.jpg)
+<ArticleCard 
+  title="Samuel Joseph Velupillai Chelvanayakam"
+  src="https://bmkltsly13vb.compat.objectstorage.ap-mumbai-1.oraclecloud.com/cdn.ft.lk/assets/uploads/image_afb0d5380f.jpg"
+/>
 
 Samuel Joseph Velupillai Chelvanayakam, known in the Tamil-speaking community (Eelam Tamils, Malaiyaha Tamils, and Muslims) as *Thanthai Selva*, …
 
