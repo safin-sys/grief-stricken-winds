@@ -5,7 +5,7 @@ import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
 import LocaleHtmlHead from "@/components/i18n/LocaleHtmlHead.astro";
 import LocaleSuggest from "@/components/i18n/LocaleSuggest.astro";
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 
 import { SITE_TITLE, SITE_DESCRIPTION } from "@/consts";
 import { useTranslations, LOCALES, getLocalePaths, type Lang } from "@/i18n";
@@ -76,8 +76,14 @@ const localeDescription = description || t(SITE_DESCRIPTION);
     <link rel="preload" as="style" fetchpriority="high" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp&display=swap" media="print" onload={`this.media='all'`} />
 
+    <!-- Brill font preloads -->
+    <link rel="preload" as="font" type="font/ttf" crossorigin href="/fonts/Brill-Roman.ttf" />
+    <link rel="preload" as="font" type="font/ttf" crossorigin href="/fonts/Brill-Italic.ttf" />
+    <link rel="preload" as="font" type="font/ttf" crossorigin href="/fonts/Brill-Bold.ttf" />
+    <link rel="preload" as="font" type="font/ttf" crossorigin href="/fonts/Brill-BoldItalic.ttf" />
+
     <LocaleHtmlHead />
-    <ViewTransitions />
+    <ClientRouter />
   </head>
 
   <body>
