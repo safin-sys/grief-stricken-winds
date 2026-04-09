@@ -1,5 +1,9 @@
 /* basic site style */
 
+body {
+	font-family: "Brill", serif;
+}
+
 :lang(ar) {
 	* {
 		letter-spacing: 0 !important;
