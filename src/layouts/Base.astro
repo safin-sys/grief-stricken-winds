@@ -24,7 +24,7 @@ const {
 } = Astro.props.frontmatter || Astro.props;
 
 const locale = Astro.currentLocale as Lang;
-const localeTitle = title ? `${title} - ${t(SITE_TITLE)}` : t(SITE_TITLE);
+const localeTitle = title ? (title === t(SITE_TITLE) ? title : `${title} - ${t(SITE_TITLE)}`) : t(SITE_TITLE);
 const localeDescription = description || t(SITE_DESCRIPTION);
 ---
 
