@@ -11,21 +11,11 @@ body {
 }
 
 :root {
-	@media (prefers-color-scheme: dark) {
-		--color-theme: #aaa;
+  --color-theme: #aaa;
 		--color-accent: #555;
 		--color-base: #111;
 		--color-main: #eee7d7;
 		--color-caution: #ffaa2b;
-	}
-	@media (prefers-color-scheme: light) {
-		--color-theme: #aaa;
-		--color-accent: #ffcc21;
-		--color-base: #eee7d7;
-		--color-main: #111;
-		--color-caution: #a80a00;
-	}
-
 	--sp-l: 64px;
 	--sp-m: 32px;
 	--sp-s: 16px;
